@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta http-equiv="content-type"
+              content0="text/html";
+              charset="UTF-8">
+        <style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </style>
+     </head>
+        <body>
+          <form name="formulier"
+                action = "mailto: don_lol@live.nl"
+                method = "post">
+          <fieldset>
+            <legend>Bereken hier</legend>  
+              Bedrag per stuk: <input required type="text" id="Bedrag"
+                     name="bedrag" placeholder="Bedrag" /><br>
+             Aantal: <input required type="text" id="Aantal"
+                     name="aantal" placeholder="Aantal" /><br>
+              </fieldset>  
+        </form>
+            <button onclick="myFunction()" id="knop">Bereken</button>
+               <div id="resultaat"></div> 
+            
+            
+           <script> 
+              
+            function myFunction(){
+                 var bedrag = document.getElementById("Bedrag").value;
+                 var aantal = document.getElementById("Aantal").value;
+                 var totaal = bedrag * aantal
+                document.getElementById('resultaat').innerHTML = ("Het totaalbedrag is  " + totaal.toFixed(2));
+                
+            }
+            </script> 
+    
+    
+    
+    
+    </body>
+
+
+
+
+</html>
